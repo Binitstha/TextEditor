@@ -1,0 +1,147 @@
+* {
+  background: rgb(214, 213, 213);
+}
+h1 {
+  background: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgb(65, 65, 197);
+  font-size: 4rem;
+}
+main {
+  height: 100%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.head span {
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.head-content {
+  background: transparent;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+}
+.textBox1,
+.textBox2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.textBox1 label,
+.textBox2 label {
+  font-size: 1.4rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#formatText {
+  background: #eeeeee;
+  height: 30rem;
+  max-height: 30rem;
+  margin-top: 1%;
+  border-radius: 1em;
+  padding: 5%;
+  font-size: 1.3rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 40rem;
+  word-wrap: break-word;
+  box-shadow: 0.1em 0 .7em 0em;
+}
+textarea {
+  box-shadow: 0.1em 0 .7em -.1em;
+  margin-top: 1%;
+  width: 40rem;
+  min-height: 30rem;
+  border-radius: 1em;
+  padding: 5%;
+  font-size: 1.3rem;
+  /* overflow:-moz-hidden-unscrollable; */
+  backdrop-filter: blur(15px);
+  scroll-behavior: smooth;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.linethrough{
+    text-decoration: line-through ;
+}
+.active {
+  background-color: #c7c7c7;
+  border-radius: 0.5em;
+}
+.active2{
+    mix-blend-mode: multiply;
+    border-radius: 0.5em;
+}
+@media only screen and (max-width: 800px) {
+    *{
+        height: fit-content;
+    }
+    .boxes{
+        display: grid;
+        margin-left: -4%;
+    }
+    textarea{
+        width: 18rem;
+    }
+    #formatText{
+        width: 18rem;
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+    .head{
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        width: fit-content;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .head span{
+        width: 9rem;
+    }
+    .head .align{
+        width: 5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .head-content{
+        font-size: 1rem;
+        width: 2rem;
+        height: 3rem;
+    }
+    .boxes label{
+        margin-top: 10%;
+    }
+}

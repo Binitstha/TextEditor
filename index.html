@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="title">TEXT EDITOR</h1>
+    <main>
+        <div class="head">
+            <span onclick="makeBold(this)"  class="boldBtn"><b style="width: 8rem;" class="head-content">BOLD</b></span>
+            <span onclick="makeItalic(this)" class="italicBtn"><i style="width: 8rem;" class="head-content">ITALIC</i></span>
+            <span onclick="makeUnderline(this)" class="underlineBtn"><u style="width: 13rem;" class="head-content">UNDERLNE</u></span>
+            <span onclick="makeLineThrough(this)" class="lineThroughBtn"><u style="width: 16rem; text-decoration: line-through;" class="head-content">LINE-THROUGH</u></span>
+            <span class="align" onclick="makAlign(this,'left')"><b style="width: 4rem;" class="head-content"><img src="icons8-align-left-64.png" width="80%" alt="align-left"></b></span>
+            <span class="align" onclick="makAlign(this,'center')"><b style="width: 4rem;" class="head-content"><img src="icons8-align-center-64.png" width="80%" alt="align-center"></b></span>
+            <span class="align" onclick="makAlign(this,'right')"><b style="width: 4rem;" class="head-content"><img src="icons8-align-right-64.png" width="80%" alt="align-right"></b></span>
+        </div>
+        <div class="boxes">
+            <div class="textBox1">
+                <label for="text">Docment Text</label>
+                <textarea id="documentText" oninput="updateText()" placeholder="Type here..." style="resize: none" cols="30" rows="10"></textarea>
+            </div>
+            <div class="textBox2">
+                <label for="text">Formatteed Text</label>
+                <div id="formatText" style="font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;" cols="30" rows="10"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
